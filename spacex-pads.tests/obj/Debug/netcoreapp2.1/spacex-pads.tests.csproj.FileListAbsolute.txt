@@ -1,0 +1,17 @@
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.tests.deps.json
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.tests.runtimeconfig.json
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.tests.runtimeconfig.dev.json
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.tests.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.tests.pdb
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\spacex-pads.pdb
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.csprojAssemblyReference.cache
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.csproj.CoreCompileInputs.cache
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.AssemblyInfoInputs.cache
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.AssemblyInfo.cs
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.csproj.CopyComplete
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.dll
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.pdb
