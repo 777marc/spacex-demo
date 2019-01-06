@@ -12,14 +12,17 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using spacex_pads.Services;
 using spacex_pads.Config;
+using NLog.Extensions.Logging;
+using NLog.Web;
 
 namespace spacex_pads
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             Configuration = configuration;
+            env.ConfigureNLog("nlog.config");
         }
 
         public IConfiguration Configuration { get; }
@@ -33,7 +36,7 @@ namespace spacex_pads
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -44,7 +47,8 @@ namespace spacex_pads
                 app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+            loggerFactory.AddNLog();
+            
             app.UseMvc();
         }
     }

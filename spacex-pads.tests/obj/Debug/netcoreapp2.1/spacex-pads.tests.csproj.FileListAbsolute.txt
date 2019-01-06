@@ -15,3 +15,4 @@ c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.csproj.CopyComplete
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.dll
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\obj\Debug\netcoreapp2.1\spacex-pads.tests.pdb
+c:\Users\marc_\source\repos\spacex-demo\spacex-pads.tests\bin\Debug\netcoreapp2.1\nlog.config

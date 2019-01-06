@@ -40,3 +40,4 @@ c:\Users\marc_\source\repos\spacex-demo\spacex-pads\obj\Debug\netcoreapp2.1\spac
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads\obj\Debug\netcoreapp2.1\spacex-pads.RazorTargetAssemblyInfo.cache
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads\obj\Debug\netcoreapp2.1\spacex-pads.dll
 c:\Users\marc_\source\repos\spacex-demo\spacex-pads\obj\Debug\netcoreapp2.1\spacex-pads.pdb
+C:\Users\marc_\source\repos\spacex-demo\spacex-pads\bin\Debug\netcoreapp2.1\nlog.config
