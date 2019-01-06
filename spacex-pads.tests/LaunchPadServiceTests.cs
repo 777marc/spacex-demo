@@ -9,12 +9,11 @@ namespace spacex_pads.tests
 {
     public class LaunchPadServiceTests
     {
+        private readonly AppSettings _appSettings = new AppSettings();
         [Fact]
         public void Should_get_all_launchpads()
         {
-            // Mock AppSettings
-            AppSettings appSettings = new AppSettings();
-            IOptions<AppSettings> options = Options.Create(appSettings);
+            IOptions<AppSettings> options = Options.Create(_appSettings);
             var lpService = new LaunchPads(options);
             Assert.NotNull(lpService.GetAllPads());
         }
@@ -22,9 +21,7 @@ namespace spacex_pads.tests
         [Fact]
         public void Should_get_a_single_launchpad()
         {
-            // Mock AppSettings
-            AppSettings appSettings = new AppSettings();
-            IOptions<AppSettings> options = Options.Create(appSettings);
+            IOptions<AppSettings> options = Options.Create(_appSettings);
             var lpService = new LaunchPads(options);
             Assert.NotNull(lpService.GetPad("kwajalein_atoll"));
         }        
@@ -34,11 +31,19 @@ namespace spacex_pads.tests
         [InlineData("retired")]
         public void Should_get_launchpads_by_status(string value)
         {
-            // Mock AppSettings
-            AppSettings appSettings = new AppSettings();
-            IOptions<AppSettings> options = Options.Create(appSettings);
+            IOptions<AppSettings> options = Options.Create(_appSettings);
             var lpService = new LaunchPads(options);
             Assert.NotNull(lpService.GetPadsByStatus(value));
         } 
+
+        [Theory]
+        [InlineData("Space")]
+        [InlineData("Force")]
+        public void Should_get_launchpads_by_search_criteria(string value)
+        {
+            IOptions<AppSettings> options = Options.Create(_appSettings);
+            var lpService = new LaunchPads(options);
+            Assert.NotNull(lpService.GetPadsSearch(value));
+        }         
     }
 }

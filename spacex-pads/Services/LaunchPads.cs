@@ -71,5 +71,23 @@ namespace spacex_pads.Services
             return launchPadArray.ToList();
         }
 
+        public async Task<List<LaunchPad>> GetPadsSearch(string criteria)
+        {
+            var padList = new List<LaunchPad>();
+            HttpResponseMessage response = await _client.GetAsync(_baseUrl);
+            var pads = await response.Content.ReadAsStringAsync();
+            JArray launchPads = JArray.Parse(pads);
+
+            var launchPadArray = from lp in launchPads
+                                 where ((string)lp["full_name"]).Contains(criteria)
+                                 select new LaunchPad {
+                                     Id = (string)lp["id"],
+                                     Name = (string)lp["full_name"],
+                                     Status = (string)lp["status"],
+                                 };   
+
+            return launchPadArray.ToList();
+        }        
+
     }
 }

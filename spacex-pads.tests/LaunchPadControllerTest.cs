@@ -49,5 +49,17 @@ namespace spacex_pads.tests
             var lpController = new LaunchPadsController(lpService, logger);
             Assert.NotNull(lpController.GetByStatus(value));
         } 
+
+        [Theory]
+        [InlineData("Space")]
+        [InlineData("Force")]
+        public void Should_get_launchpads_by_search_by_controller(string value)
+        {
+            IOptions<AppSettings> options = Options.Create(_appSettings);
+            var lpService = new LaunchPads(options);
+            var logger = Mock.Of<ILogger<LaunchPadsController>>();
+            var lpController = new LaunchPadsController(lpService, logger);
+            Assert.NotNull(lpController.GetPadsSearch(value));
+        }         
     }
 }

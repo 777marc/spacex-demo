@@ -9,5 +9,6 @@ namespace spacex_pads.Services
          Task<List<LaunchPad>> GetAllPads();
          Task<LaunchPad> GetPad(string padId);
          Task<List<LaunchPad>> GetPadsByStatus(string status);
+         Task<List<LaunchPad>> GetPadsSearch(string criteria);
     }
 }

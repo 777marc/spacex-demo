@@ -6930,11 +6930,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\spacex-pads.tests.csproj",
+      "projectUniqueName": "C:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\spacex-pads.tests.csproj",
       "projectName": "spacex-pads.tests",
-      "projectPath": "c:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\spacex-pads.tests.csproj",
+      "projectPath": "C:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\spacex-pads.tests.csproj",
       "packagesPath": "C:\\Users\\marc_\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\obj\\",
+      "outputPath": "C:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads.tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6953,8 +6953,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads\\spacex-pads.csproj": {
-              "projectPath": "c:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads\\spacex-pads.csproj"
+            "C:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads\\spacex-pads.csproj": {
+              "projectPath": "C:\\Users\\marc_\\source\\repos\\spacex-demo\\spacex-pads\\spacex-pads.csproj"
             }
           }
         }

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using NLog.Web;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using spacex_pads.Models;
@@ -47,5 +46,14 @@ namespace spacex_pads.Controllers
             _logger.LogInformation("LaunchPadsController.GetPadsByStatus");
             return Ok(launchPads);
         }
+
+        [HttpGet("search/{criteria}")]
+        public async Task<IActionResult> GetPadsSearch(string criteria)
+        {
+            var launchPads = await _repo.GetPadsSearch(criteria);
+            _logger.LogInformation("LaunchPadsController.GetPadsSearch");
+            return Ok(launchPads);
+        }
+
     }
 }
