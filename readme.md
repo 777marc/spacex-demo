@@ -26,8 +26,10 @@ I set up NLog as the app's logger.  In this implementation, it's injected only i
 I set up an AppSettings class for the SpaceX API URL which is injection into the service.  Down the road when a database is added, the AppSettings class can be used to reference any connection information for the data source.  This aslo makes the service and the app itself more horizontally scalable since each instance can host its own configuration.
 
 ## LaunchPad Model Example
-``` {
-        "id": "ccafs_slc_40",
-        "name": "Cape Canaveral Air Force Station Space Launch Complex 40",
-        "status": "active"
-    }```
+```
+{
+  "id": "ccafs_slc_40",
+  "name": "Cape Canaveral Air Force Station Space Launch Complex 40",
+  "status": "active"
+} 
+```
