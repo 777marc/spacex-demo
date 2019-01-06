@@ -22,7 +22,7 @@ I created 2 unit testing classes;  one to test the service itself and the other 
 ### Logging 
 I set up NLog as the app's logger.  In this implementation, it's injected only into the controller and I perform some basic logging on each of the 4 method calls. The log files can be found at C:\temp.  This location can be modified by changning the location the nlog.config.  The verbosity can modified by changing the logging settings in the logging section of the AppSetting.json file.
 
-## Config
+### Config
 I set up an AppSettings class for the SpaceX API URL which is injection into the service.  Down the road when a database is added, the AppSettings class can be used to reference any connection information for the data source.  This aslo makes the service and the app itself more horizontally scalable since each instance can host its own configuration.
 
 ## LaunchPad Model Example
