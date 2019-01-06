@@ -1,17 +1,17 @@
 # SmileDirectClub .NET Core Code Challenge - Marc Mendoza
 
 ### API Specification 
-* Get All Launch Pads
+* Get All Launch Pads: returns an array of the LaunchPad
   * Example <Server>/api/launchpads
 
-* Get Launch Pad By Id
-  * Example <Server>/api/launchpads/{{site_id}}
+* Get Launch Pad By Id: returns a single LaunchPad by Id
+  * Example: ```(server)/api/launchpads/{{id}}```
 
-* Get Launch Pad(s) By Status
-  * Example <Server>/api/launchpads/status/{{ active / retired }}
+* Get Launch Pad(s) By Status: returns an array of the LaunchPad filtered by their status of active or retired
+  * Example ```(server)/api/launchpads/status/{{ active / retired }}```
 
-* Get Launch Pad(s) By Name Search (Full or Partial)
-  * Example <Server>/api/launchpads/search/{{ search term }}
+* Get Launch Pad(s) By Name Search (Full or Partial): returns an array of the LaunchPad filtered by full_name
+  * Example ```(server)/api/launchpads/search/{{ search term }}```
 
 ### Data Source Abstraction
 I created a Service named LaunchPads which has an Interface that is used to inject the service into the LaunchPadController class which would allow us to swap out the service from an API based service to a database. In the LaunchPad service class I utilized linq to query the results which could be reused when switching to a database.  This assumes that we would use some type of ORM like Entity Framework.
@@ -25,3 +25,9 @@ I set up NLog as the app's logger.  In this implementation, it's injected only i
 ## Config
 I set up an AppSettings class for the SpaceX API URL which is injection into the service.  Down the road when a database is added, the AppSettings class can be used to reference any connection information for the data source.  This aslo makes the service and the app itself more horizontally scalable since each instance can host its own configuration.
 
+## LaunchPad Model Example
+``` {
+        "id": "ccafs_slc_40",
+        "name": "Cape Canaveral Air Force Station Space Launch Complex 40",
+        "status": "active"
+    }```
